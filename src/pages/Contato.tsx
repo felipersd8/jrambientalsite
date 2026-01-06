@@ -80,8 +80,8 @@ export function Contato() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl mx-auto"
           >
-            <div className="bg-white rounded-card shadow-sm p-8 md:p-10">
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <div className="bg-white rounded-card shadow-sm p-6 md:p-8 lg:p-10">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="nome" className="block text-sm font-medium text-gray-700 mb-2">
@@ -92,8 +92,8 @@ export function Contato() {
                     id="nome"
                     {...register('nome')}
                     className={cn(
-                      'w-full px-4 py-3 bg-white border rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
-                      errors.nome ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-300'
+                      'w-full px-4 py-3 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
+                      errors.nome ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200'
                     )}
                   />
                   {errors.nome && (
@@ -110,8 +110,8 @@ export function Contato() {
                     id="fazenda"
                     {...register('fazenda')}
                     className={cn(
-                      'w-full px-4 py-3 bg-white border rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
-                      errors.fazenda ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-300'
+                      'w-full px-4 py-3 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
+                      errors.fazenda ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200'
                     )}
                   />
                   {errors.fazenda && (
@@ -130,8 +130,8 @@ export function Contato() {
                     id="municipio"
                     {...register('municipio')}
                     className={cn(
-                      'w-full px-4 py-3 bg-white border rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
-                      errors.municipio ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-300'
+                      'w-full px-4 py-3 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
+                      errors.municipio ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200'
                     )}
                   />
                   {errors.municipio && (
@@ -150,8 +150,8 @@ export function Contato() {
                     maxLength={2}
                     placeholder="MG"
                     className={cn(
-                      'w-full px-4 py-3 bg-white border rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
-                      errors.uf ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-300'
+                      'w-full px-4 py-3 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
+                      errors.uf ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200'
                     )}
                   />
                   {errors.uf && (
@@ -171,8 +171,8 @@ export function Contato() {
                     {...register('whatsapp')}
                     placeholder="(31) 99999-9999"
                     className={cn(
-                      'w-full px-4 py-3 bg-white border rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
-                      errors.whatsapp ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-300'
+                      'w-full px-4 py-3 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
+                      errors.whatsapp ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200'
                     )}
                   />
                   {errors.whatsapp && (
@@ -189,8 +189,8 @@ export function Contato() {
                     id="email"
                     {...register('email')}
                     className={cn(
-                      'w-full px-4 py-3 bg-white border rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
-                      errors.email ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-300'
+                      'w-full px-4 py-3 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all',
+                      errors.email ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200'
                     )}
                   />
                   {errors.email && (
@@ -207,8 +207,8 @@ export function Contato() {
                   id="tema"
                   {...register('tema')}
                   className={cn(
-                    'w-full px-4 py-3 bg-white border rounded-lg text-gray-900 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all cursor-pointer',
-                    errors.tema ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-300'
+                    'w-full px-4 py-3 bg-white border-2 rounded-lg text-gray-900 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all cursor-pointer',
+                    errors.tema ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200'
                   )}
                 >
                   <option value="">Selecione um tema</option>
@@ -232,8 +232,8 @@ export function Contato() {
                   {...register('mensagem')}
                   rows={5}
                   className={cn(
-                    'w-full px-4 py-3 bg-white border rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all resize-y',
-                    errors.mensagem ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-300'
+                    'w-full px-4 py-3 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-all resize-y',
+                    errors.mensagem ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200'
                   )}
                 />
                 {errors.mensagem && (
